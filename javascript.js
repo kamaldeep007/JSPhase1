@@ -54,3 +54,12 @@ function createCompleted(input) {
 
   completed.appendChild(div);
 }
+
+// APIs
+fetch(
+  "http://newsapi.org/v2/everything?q=apple&from=2020-07-27&to=2020-07-27&sortBy=popularity&apiKey=f5ee3dafb98944c29910f52c8b8d939a"
+)
+  .then((resp) => resp.json()) // json convert
+  .then(function (data) {
+    console.log(data);
+  });
